@@ -31,7 +31,7 @@ export default {
         if (this.winner == 'X' || this.winner == 'O') {
             setTimeout(() => {
                 this.hasResult = true;
-            }, 0)
+            }, 600)
         }
     },
     shallowClone (array) {
