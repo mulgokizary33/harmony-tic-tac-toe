@@ -1,0 +1,23 @@
+<div class="container">
+    <marquee class="marquee" if="{{hasResult}}">Winner: {{winner}} !!!</marquee>
+    <div class="board" else>
+        <div class="board-row">
+            <input type="button" class="square" value="{{squareValues[0]}}" @click="clickSquare(0)"></input>
+            <input type="button" class="square" value="{{squareValues[1]}}" @click="clickSquare(1)"></input>
+            <input type="button" class="square" value="{{squareValues[2]}}" @click="clickSquare(2)"></input>
+        </div>
+        <div class="board-row">
+            <input type="button" class="square" value="{{squareValues[3]}}" @click="clickSquare(3)"></input>
+            <input type="button" class="square" value="{{squareValues[4]}}" @click="clickSquare(4)"></input>
+            <input type="button" class="square" value="{{squareValues[5]}}" @click="clickSquare(5)"></input>
+        </div>
+        <div class="board-row">
+            <input type="button" class="square" value="{{squareValues[6]}}" @click="clickSquare(6)"></input>
+            <input type="button" class="square" value="{{squareValues[7]}}" @click="clickSquare(7)"></input>
+            <input type="button" class="square" value="{{squareValues[8]}}" @click="clickSquare(8)"></input>
+        </div>
+    </div>
+    <input if="{{hasResult}}" class="btn-reset" value="重新开始" @click="clickReset">
+    </input>
+    <input class="btn" value="返回" @click="clickBack"></input>
+</div>

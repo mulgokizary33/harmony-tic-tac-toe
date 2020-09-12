@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+}
+.marquee{
+    color: #67C23A;
+}
+.btn{
+    color: #409EFF;
+    background-color: black;
+    height: 80px;
+}
+.btn-reset{
+    margin-top: 100px;
+    width: 200px;
+    color: #F56C6C;
+    background-color: black;
+}
+.board{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-width: 1px;
+    border-color: #999;
+}
+.board-row{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.square{
+    background-color: black;
+    border-color: #999;
+    border-width: 1px;
+    border-radius: 0px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
